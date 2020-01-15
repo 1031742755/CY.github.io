@@ -56,7 +56,7 @@
 					]
 				},
 				topInfo: {
-					title: 'Hi,Toretto',
+					title: '尊敬的青棠陛下',
 					text: 'You got to put the past behind you before you can move on.',
 					github: "",
 					weibo: "",
@@ -249,7 +249,7 @@
 			const blogTitle = $(this.cnblogs.blogTitle).find('h1 a').html();
 			const autherName = $(this.cnblogs.publicProfile).find('a:eq(0)').html();
 			let $title = $('head').find('title');
-			$title.html($title.html().replace(`富士的雪 | ${autherName}`, `${blogTitle}`));
+			$title.html($title.html().replace(`青棠 | ${autherName}`, `${blogTitle}`));
 
 			// Build a tags button on navbar.
 			let $navList = $(this.cnblogs.navList);
@@ -279,7 +279,7 @@
 			});
 
 
-			$("#navList").append('<li><a id="blog_nav_myyoulian" class="menu" href="https://www.cnblogs.com/zouwangblog/articles/11177049.html">友链</a><i></i></li><li><a id="blog_nav_myzanshang" class="menu" href="https://www.cnblogs.com/zouwangblog/articles/11340077.html">赞赏</a><i></i></li><li><a id="blog_nav_myguanyu" class="menu" href="">关于</a><i></i></li>');
+			$("#navList").append('<li><a id="blog_nav_myyoulian" class="menu" href="#">友链</a><i></i></li><li><a id="blog_nav_myzanshang" class="menu" href="#">赞赏</a><i></i></li><li><a id="blog_nav_myguanyu" class="menu" href="">关于</a><i></i></li>');
 			//添加标签icon
 			$('#blog_nav_myhome').prepend('<i class="fa fa-fort-awesome" aria-hidden="true"></i>');
 			$('#blog_nav_contact').prepend('<i class="fa fa-address-book-o" aria-hidden="true"></i>');
@@ -291,10 +291,10 @@
 
 			//添加li内嵌ui
 			let guanyu = '<ul class="sub-menu">' +
-					'<li><a href="https://www.cnblogs.com/zouwangblog/articles/11157339.html "><i class="fa fa-meetup" aria-hidden="true"></i> 我？</a></li>' +
-					'<li><a href="https://www.cnblogs.com/zouwangblog/articles/11346906.html "><i class="fa fa-area-chart" aria-hidden="true"></i> 统计</a></li>' +
-					'<li><a href="https://www.cnblogs.com/zouwangblog/articles/11350777.html "><i class="fa fa-heartbeat" aria-hidden="true"></i> 监控</a></li>' +
-					'<li><a href="https://www.cnblogs.com/zouwangblog/articles/11350787.html"><i class="iconfont icon-taohua" aria-hidden="true"></i> 主题</a></li>' +
+					'<li><a href="#"><i class="fa fa-meetup" aria-hidden="true"></i> 我？</a></li>' +
+					'<li><a href="#"><i class="fa fa-area-chart" aria-hidden="true"></i> 统计</a></li>' +
+					'<li><a href="#"><i class="fa fa-heartbeat" aria-hidden="true"></i> 监控</a></li>' +
+					'<li><a href="#"><i class="iconfont icon-taohua" aria-hidden="true"></i> 主题</a></li>' +
 					'</ul>';
 			$('#blog_nav_myguanyu').after(guanyu);
 
@@ -305,8 +305,8 @@
 		 */
 		buildCopyright() {
 			//这里能保留么，算是我的一个小心愿。
-			var content = `<div> Powered By <a href="https://www.cnblogs.com" target="_blank">Cnblogs</a> |
-            Theme <a href="https://github.com/Zou-Wang/CNblogs-Theme-Sakura" target="_blank">Toretto v${this.version}</a></div>`;
+			var content = `<div> Powered By <a href="https://www.cnblogs.com" target="_blank">博客园</a> |
+            青棠梨煎雪 v${this.version}</div>`;
 			$(this.cnblogs.footer).append(content);
 		}
 
@@ -748,9 +748,9 @@
 			//博客logo
 			var title = '<div class="site-branding">' +
 					'<span class="logolink moe-mashiro">' +
-					'<a href="https://www.cnblogs.com/zouwangblog/" alt="富士的雪">' +
-					'<ruby><span class="sakuraso">ふじさん</span><span class="no">の</span><span class="shironeko">雪</span>' +
-					'<rt class="chinese-font">富士的雪</rt></ruby></a></span>' +
+					'<a href="https://www.cnblogs.com/blogcy/" alt="青棠">' +
+					'<ruby><span class="sakuraso">ふじさん</span><span class="no">の</span><span class="shironeko">梨煎雪</span>' +
+					'<rt class="chinese-font">青棠</rt></ruby></a></span>' +
 					'</div>'
 			$('body').prepend(title);
 
